@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- contact.html
+education.html
+family.html
+hobbies.html
+index.html -->
+	<main>
+		<div class="burger" onclick='toggleBurgerImage();$("header").slideToggle()'>
+			<img src="img/open.svg" alt="">
+		</div>
+		<script>
+			function toggleBurgerImage() {
+				let src = $(".burger img").attr("src");
+				if (src == "img/open.svg") {
+					$(".burger img").attr("src", "img/close.svg");
+				} else {
+					$(".burger img").attr("src", "img/open.svg");
+				}
+			}
+		</script>
+		<header>
+			<a href="index.html">Home</a>
+			<a href="family.html">Family</a>
+			<a href="hobbies.html">Education & Hobbies</a>
+			<a href="contact.html">Contact</a>
+		</header>
+
+		<div class="content schools_content">
+			<h2>Education</h2>
+			<div class="hobbies">
+				<div class="school">
+					<img src="img/school.png" alt="">
+					<span>Школа №2</span>
+					<p>2011-2017</p>
+				</div>
+				<div class="school">
+					<img src="img/ktl.png" alt="">
+					<span>Құлсары КТЛ</span>
+					<p>2017-2022</p>
+				</div>
+				<div class="school">
+					<img src="img/sdu.png" alt="">
+					<span>SDU University</span>
+					<p>2022</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<main class="hobbies_content">
+		<div class="content">
+			<h2>Hobbies</h2>
+			<div class="hobbies">
+				<div class="hobby">
+					<img src="img/pycharm.jpg" alt="">
+					<span>Programming</span>
+					<p>I like programming, especially in Python. I'm currently learning Django.</p>
+				</div>
+				<div class="hobby">
+					<img src="img/photoshop.png" alt="">
+					<span>Graphic Design</span>
+					<p>Using Photoshop, I create various designs, banners, and logos. I've been using it for 8 years now.</p>
+				</div>
+				<div class="hobby">
+					<img src="img/illustrator.png" alt="">
+					<span>Vector design</span>
+					<p>Also using Illustrator, I create vector designs. It is very convenient for creating logos and vectors.</p>
+				</div>
+				<div class="hobby">
+					<img src="img/web.png" alt="">
+					<span>Surfing the net</span>
+					<p>In free time I like to surf the net and read interesting articles about it, programming, and design.</p>
+				</div>
+				<div class="hobby">
+					<img src="img/guitar.png" alt="">
+					<span>Guitar</span>
+					<!-- say something interesting, not about time -->
+					<p>I can play the guitar a little, but I'm not very good at it, I just play for fun, and I like it.</p>
+				</div>
+				<div class="hobby">
+					<img src="img/dombyra.png" alt="">
+					<span>Dombyra</span>
+					<p>I very much like the sound of the dombyra, It is kazaq national instrument, i know 3 songs on it.</p>
+				</div>
+				<div class="hobby">
+					<img src="img/cs2.png" alt="">
+					<span>Counter-Strike 2</span>
+					<p>Cyber sport is my hobby, I play CS2 and I'm a average player. I like it very much.</p>
+				</div>
+				<div class="hobby">
+					<img src="img/gym.png" alt="">
+					<span>Gym</span>
+					<p>About two weeks ago I started going to the gym, I like it very much, I feel better.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- <div class="border"></div> -->
+	<footer>
+		© 	Bye bye, its footer
+	</footer>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

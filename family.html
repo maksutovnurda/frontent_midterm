@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- contact.html
+education.html
+family.html
+hobbies.html
+index.html -->
+	<main>
+		<div class="burger" onclick='toggleBurgerImage();$("header").slideToggle()'>
+			<img src="img/open.svg" alt="">
+		</div>
+		<script>
+			function toggleBurgerImage() {
+				let src = $(".burger img").attr("src");
+				if (src == "img/open.svg") {
+					$(".burger img").attr("src", "img/close.svg");
+				} else {
+					$(".burger img").attr("src", "img/open.svg");
+				}
+			}
+		</script>
+		<header>
+			<a href="index.html">Home</a>
+			<a href="family.html">Family</a>
+			<a href="hobbies.html">Education & Hobbies</a>
+			<a href="contact.html">Contact</a>
+		</header>
+
+		<div class="content family_content">
+			<h2>Family Members</h2>
+			<div class="family_members">
+				<div class="member">
+					<img src="img/avatar.jpg" alt="">
+					<div class="info">
+						<h3>Me</h3>
+						<p>Nurdaulet Maxutov</p>
+					</div>
+				</div>
+				<div class="member">
+					<img src="img/7.png" alt="">
+					<div class="info">
+						<h3>My father</h3>
+						<p>Utegen Temirov</p>
+					</div>
+				</div>
+				<div class="member">
+					<img src="img/6.png" alt="">
+					<div class="info">
+						<h3>My mother</h3>
+						<p>Altynshash Erkebayeva</p>
+					</div>
+				</div>
+				<div class="member">
+					<img src="img/11.png" alt="">
+					<div class="info">
+						<h3>My brother</h3>
+						<p>Nursultan Maksotov</p>
+					</div>
+				</div>
+				<div class="member">
+					<img src="img/10.png" alt="">
+					<div class="info">
+						<h3>My brother</h3>
+						<p>Nurzhan Maksotov</p>
+					</div>
+				</div><div class="member">
+					<img src="img/5.png" alt="">
+					<div class="info">
+						<h3>My brother</h3>
+						<p>Shapagat Maksot</p>
+					</div>
+				</div>
+				<div class="member">
+					<img src="img/8.png" alt="">
+					<div class="info">
+						<h3>My jenge</h3>
+						<p>Madina Maksotova</p>
+					</div>
+				</div>
+				<div class="member">
+					<img src="img/9.png" alt="">
+					<div class="info">
+						<h3>My jenge</h3>
+						<p>Arailym Meirkhan</p>
+					</div>
+				</div>
+				<div class="member">
+					<img src="img/1.png" alt="">
+					<div class="info">
+						<h3>My brother</h3>
+						<p>Alikhan Utegenuly</p>
+					</div>
+				</div>
+				<div class="member">
+					<img src="img/4.png" alt="">
+					<div class="info">
+						<h3>My brother</h3>
+						<p>Omar Utegenuly</p>
+					</div>
+				</div>
+				<div class="member">
+					<img src="img/2.png" alt="">
+					<div class="info">
+						<h3>My sister</h3>
+						<p>Sezim Utegenqyzy</p>
+					</div>
+				</div>
+				<div class="member">
+					<img src="img/3.png" alt="">
+					<div class="info">
+						<h3>My sister</h3>
+						<p>Nazym Utegenqyzy</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- <div class="border"></div> -->
+	<footer>
+		© 	Bye bye, its footer
+	</footer>
+
+	<script src="js/script.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+</body>
+</html>
